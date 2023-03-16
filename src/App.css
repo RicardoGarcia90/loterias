@@ -2,15 +2,51 @@
   text-align: center;
 }
 
-.container {
+.sortContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: white;
   margin: 20px auto;
-  border: 1px solid black;
-  width: 35rem;
+  max-width: 40rem;
   height: auto;
   padding: 1.2rem;
+  border-radius: 1.2rem;
 }
 
 .block-megaSena {
   display: flex;
   flex-direction: column;
+}
+
+.result {
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-numbers {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-top: 0.8rem;
+  font-weight: bold;
+
+  background-color: green;
+  width: 4.5rem;
+  height: 3.5rem;
+  border-radius: 100%;
+
+  list-style: none;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.list-numbers:hover {
+  background-color: rgba(0, 128, 0, 0.427);
+  color: green;
 }

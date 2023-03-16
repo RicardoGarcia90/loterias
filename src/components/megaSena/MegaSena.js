@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import './MegaSena.css';
+import NumerosSorteados from '../numerosSorteados/NumerosSorteados';
 
 const MegaSena = (props) => {
-  const [sorteio, setSorteio] = useState('');
+  // const [sorteio, setSorteio] = useState('');
 
   function geraNumeros() {
     const numerosSorteados = [];
@@ -14,22 +15,21 @@ const MegaSena = (props) => {
     }
     console.log(numerosSorteados);
 
-    setSorteio(numerosSorteados.map((sort, i) => <li key={i}>{sort}</li>));
-  }
-
-  function limparNumeros() {
-    setSorteio('');
+    props.handleResult(
+      numerosSorteados.map((sort, i) => (
+        <li className="list-numbers" key={i}>
+          {sort}
+        </li>
+      ))
+    );
   }
 
   return (
     <div>
-      <h2>Mega-Sena</h2>
-      <button onClick={geraNumeros}>Gerar números</button>
-      <button onClick={limparNumeros}>Limpar</button>
-      <div>
-        <p>Numeros sorteados:</p>
-        <ul>{sorteio}</ul>
-      </div>
+      <h2 className="titleMegaSena">Mega-Sena</h2>
+      <button className="btn-megaSena" onClick={geraNumeros}>
+        Gerar números
+      </button>
     </div>
   );
 };

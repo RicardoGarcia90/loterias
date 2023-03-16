@@ -14,22 +14,19 @@ const Lotofacil = (props) => {
     }
     console.log(numerosSorteados);
 
-    setSorteio(numerosSorteados.map((sort, i) => <li key={i}>{sort}</li>));
-  }
-
-  function limparNumeros() {
-    setSorteio('');
+    props.handleResult(
+      numerosSorteados.map((sort, i) => (
+        <li className="list-numbers" key={i}>
+          {sort}
+        </li>
+      ))
+    );
   }
 
   return (
     <div>
-      <h2>Lotofacil</h2>
+      <h2 className="titleLotofacil">Lotofacil</h2>
       <button onClick={geraNumeros}>Gerar números</button>
-      <button onClick={limparNumeros}>Limpar</button>
-      <div>
-        <p>Numeros sorteados:</p>
-        <ul>{sorteio}</ul>
-      </div>
     </div>
   );
 };
