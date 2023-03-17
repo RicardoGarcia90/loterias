@@ -18,6 +18,10 @@ function App() {
   return (
     <div className="card">
       <h1 className="title">Loterias</h1>
+      <p className="paragrafo">
+        Clique em um dos botões de cada jogo para gerar números aleatórios de
+        apostas
+      </p>
       <div className="sortContainer">
         <MegaSena handleResult={numerosDoSorteio} />
         <Lotofacil handleResult={numerosDoSorteio} />
