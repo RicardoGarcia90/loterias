@@ -1,29 +1,56 @@
 .title {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
 .sortContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .card {
   background-color: white;
-  margin: 20px auto;
-  max-width: 40rem;
+  margin: 30px auto;
+  max-width: 45rem;
   height: auto;
   padding: 1.2rem;
   border-radius: 1.2rem;
+  box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
 }
 
-.block-megaSena {
+.btnLimpar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin: 1.2rem 0 2rem;
+}
+
+.btnLimpar {
+  background-color: rgba(0, 0, 255, 0.319);
+  border: none;
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  color: blue;
+  font-weight: bold;
+  box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
+}
+
+.btnLimpar:hover {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.btnLimpar:active {
+  position: relative;
+  top: 3px;
+  box-shadow: none;
 }
 
 .result {
   display: flex;
-  /* justify-content: space-evenly; */
+
   gap: 1.2rem;
   margin-top: 1.2rem;
   flex-wrap: wrap;
@@ -32,11 +59,9 @@
 
 .list-numbers {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  padding-top: 0.8rem;
+  padding-top: 0.9rem;
   font-weight: bold;
 
-  background-color: green;
   width: 4.5rem;
   height: 3.5rem;
   border-radius: 100%;
@@ -44,9 +69,4 @@
   list-style: none;
   font-size: 2rem;
   text-align: center;
-}
-
-.list-numbers:hover {
-  background-color: rgba(0, 128, 0, 0.427);
-  color: green;
 }

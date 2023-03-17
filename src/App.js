@@ -3,7 +3,6 @@ import './App.css';
 import Lotofacil from './components/lotofacil/Lotofacil';
 import Lotomania from './components/lotomania/Lotomania';
 import MegaSena from './components/megaSena/MegaSena';
-import NumerosSorteados from './components/numerosSorteados/NumerosSorteados';
 
 function App() {
   const [result, setResult] = useState('Os números sorteados aparecerão aqui');
@@ -25,9 +24,11 @@ function App() {
         <Lotomania handleResult={numerosDoSorteio} />
       </div>
 
-      <button className="btnLimpar" onClick={limpar}>
-        Limpar
-      </button>
+      <div className="btnLimpar-container">
+        <button className="btnLimpar" onClick={limpar}>
+          Limpar
+        </button>
+      </div>
       <div className="result">{result}</div>
     </div>
   );

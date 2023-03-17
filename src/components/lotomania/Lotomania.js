@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './Lotomania.css';
 
 const Lotomania = (props) => {
-  const [sorteio, setSorteio] = useState('');
-
   function geraNumeros() {
     const numerosSorteados = [];
     while (numerosSorteados.length < 50) {
@@ -16,7 +13,7 @@ const Lotomania = (props) => {
 
     props.handleResult(
       numerosSorteados.map((sort, i) => (
-        <li className="list-numbers" key={i}>
+        <li className="list-numbers list-lotomania" key={i}>
           {sort}
         </li>
       ))
@@ -24,9 +21,11 @@ const Lotomania = (props) => {
   }
 
   return (
-    <div>
+    <div className="lotomania-container">
       <h2 className="titleLotomania">Lotomania</h2>
-      <button onClick={geraNumeros}>Gerar números</button>
+      <button className="btn-lotomania" onClick={geraNumeros}>
+        Gerar números
+      </button>
     </div>
   );
 };

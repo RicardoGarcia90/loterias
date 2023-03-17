@@ -1,5 +1,46 @@
+.megaSena-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .titleMegaSena {
   color: green;
   font-size: 2rem;
   font-weight: 400;
+  margin: 0;
+}
+
+.btn-megaSena {
+  background-color: green;
+  padding: 12px 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-family: inherit;
+  border: none;
+  border-radius: 1.2rem;
+  margin-top: 0.6rem;
+  box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
+}
+
+.btn-megaSena:hover {
+  background-color: rgba(0, 128, 0, 0.427);
+  color: green;
+  cursor: pointer;
+}
+
+.btn-megaSena:active {
+  position: relative;
+  top: 3px;
+  box-shadow: none;
+}
+
+.list-megaSena {
+  background-color: green;
+  color: white;
+}
+
+.list-megaSena:hover {
+  background-color: rgba(0, 128, 0, 0.427);
+  color: green;
 }

@@ -1,9 +1,6 @@
-import { useState } from 'react';
 import './Lotofacil.css';
 
 const Lotofacil = (props) => {
-  const [sorteio, setSorteio] = useState('');
-
   function geraNumeros() {
     const numerosSorteados = [];
     while (numerosSorteados.length < 15) {
@@ -16,7 +13,7 @@ const Lotofacil = (props) => {
 
     props.handleResult(
       numerosSorteados.map((sort, i) => (
-        <li className="list-numbers" key={i}>
+        <li className="list-numbers list-lotofacil" key={i}>
           {sort}
         </li>
       ))
@@ -24,9 +21,11 @@ const Lotofacil = (props) => {
   }
 
   return (
-    <div>
+    <div className="lotofacil-container">
       <h2 className="titleLotofacil">Lotofacil</h2>
-      <button onClick={geraNumeros}>Gerar números</button>
+      <button className="btn-lotofacil" onClick={geraNumeros}>
+        Gerar números
+      </button>
     </div>
   );
 };

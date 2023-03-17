@@ -1,5 +1,46 @@
+.lotofacil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .titleLotofacil {
   color: purple;
   font-size: 2rem;
   font-weight: 400;
+  margin: 0;
+}
+
+.btn-lotofacil {
+  background-color: purple;
+  padding: 12px 10px;
+  font-size: 1.2rem;
+  color: white;
+  font-family: inherit;
+  border: none;
+  border-radius: 1.2rem;
+  margin-top: 0.6rem;
+  box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
+}
+
+.btn-lotofacil:hover {
+  background-color: rgba(128, 0, 128, 0.426);
+  color: purple;
+  cursor: pointer;
+}
+
+.btn-lotofacil:active {
+  position: relative;
+  top: 3px;
+  box-shadow: none;
+}
+
+.list-lotofacil {
+  background-color: purple;
+  color: white;
+}
+
+.list-lotofacil:hover {
+  background-color: rgba(128, 0, 128, 0.426);
+  color: purple;
 }
