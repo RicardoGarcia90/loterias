@@ -8,6 +8,9 @@ const Lotomania = (props) => {
       if (numerosSorteados.indexOf(numero) === -1) {
         numerosSorteados.push(numero);
       }
+      numerosSorteados.sort(function (a, b) {
+        return a - b;
+      });
     }
     console.log(numerosSorteados);
 

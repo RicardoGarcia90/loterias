@@ -44,3 +44,28 @@
   background-color: rgba(0, 128, 0, 0.427);
   color: green;
 }
+
+/* --------- */
+/* Responsividade */
+
+@media (max-width: 482px) {
+  .titleMegaSena {
+    font-size: 1.8rem;
+  }
+
+  .btn-megaSena {
+    padding: 10px 8px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 481px /*Min 320*/) {
+  .titleMegaSena {
+    font-size: 1.6rem;
+  }
+
+  .btn-megaSena {
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+}

@@ -44,3 +44,28 @@
   background-color: rgba(255, 166, 0, 0.427);
   color: rgb(131, 85, 1);
 }
+
+/* --------- */
+/* Responsividade */
+
+@media (max-width: 482px) {
+  .titleLotomania {
+    font-size: 1.8rem;
+  }
+
+  .btn-lotomania {
+    padding: 10px 8px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 481px /*Min 320*/) {
+  .titleLotomania {
+    font-size: 1.6rem;
+  }
+
+  .btn-lotomania {
+    padding: 8px 6px;
+    font-size: 0.9rem;
+  }
+}

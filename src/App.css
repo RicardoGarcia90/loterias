@@ -9,6 +9,7 @@
 .paragrafo {
   text-align: center;
   font-size: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .sortContainer {
@@ -19,7 +20,7 @@
 .card {
   background-color: white;
   margin: 30px auto;
-  max-width: 45rem;
+  max-width: 55rem;
   height: auto;
   padding: 1.2rem;
   border-radius: 1.2rem;
@@ -57,7 +58,6 @@
 
 .result {
   display: flex;
-
   gap: 1.2rem;
   margin-top: 1.2rem;
   flex-wrap: wrap;
@@ -70,7 +70,7 @@
   font-weight: bold;
 
   width: 4.5rem;
-  height: 3.5rem;
+  height: 4.5rem;
   border-radius: 100%;
 
   list-style: none;
@@ -80,3 +80,72 @@
 
 /* ---------------------- */
 /* Responsividade */
+@media (max-width: 896px) {
+  .card {
+    width: 45rem;
+  }
+}
+
+@media (max-width: 769px /*Min 481*/) {
+  .card {
+    width: 27rem;
+  }
+
+  .sortContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .paragrafo {
+    font-size: 1rem;
+  }
+
+  .btnLimpar {
+    padding: 1rem;
+    margin-top: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .list-numbers {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0.9rem;
+    font-weight: bold;
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+
+    list-style: none;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 481px /*Min 320*/) {
+  .card {
+    width: 19rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .paragrafo {
+    font-size: 0.8rem;
+  }
+
+  .result {
+    font-size: 0.8rem;
+  }
+
+  .btnLimpar {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+}
