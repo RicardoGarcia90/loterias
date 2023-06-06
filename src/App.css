@@ -1,14 +1,14 @@
 .title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   text-align: center;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 1.8rem;
 }
 
 .paragrafo {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-bottom: 1.2rem;
 }
 
@@ -22,7 +22,7 @@
   margin: 30px auto;
   max-width: 55rem;
   height: auto;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 1.2rem;
   box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
 }
@@ -30,7 +30,7 @@
 .btnLimpar-container {
   display: flex;
   justify-content: center;
-  margin: 1.2rem 0 2rem;
+  margin: 2rem 0 2rem;
 }
 
 .btnLimpar {
@@ -38,7 +38,7 @@
   border: none;
   padding: 1.2rem;
   border-radius: 1.2rem;
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: blue;
   font-weight: bold;
   box-shadow: 10px 10px 10px -11px rgba(0, 0, 0, 0.75);
@@ -80,15 +80,10 @@
 
 /* ---------------------- */
 /* Responsividade */
-@media (max-width: 896px) {
-  .card {
-    width: 45rem;
-  }
-}
 
-@media (max-width: 769px /*Min 481*/) {
+@media (min-width: 320px) {
   .card {
-    width: 27rem;
+    width: 18rem;
   }
 
   .sortContainer {
@@ -98,11 +93,12 @@
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .paragrafo {
     font-size: 1rem;
+    text-align: justify;
   }
 
   .btnLimpar {
@@ -116,36 +112,18 @@
     padding-top: 0.9rem;
     font-weight: bold;
 
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 100%;
 
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
   }
 }
 
-@media (max-width: 481px /*Min 320*/) {
+@media (min-width: 384px) {
   .card {
-    width: 19rem;
-  }
-
-  .title {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-  }
-
-  .paragrafo {
-    font-size: 0.8rem;
-  }
-
-  .result {
-    font-size: 0.8rem;
-  }
-
-  .btnLimpar {
-    padding: 0.8rem;
-    font-size: 0.8rem;
+    max-width: 20rem;
   }
 }
