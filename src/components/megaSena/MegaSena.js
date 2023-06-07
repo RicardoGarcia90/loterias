@@ -1,3 +1,4 @@
+import Button from '../UI/Button';
 import './MegaSena.css';
 
 const MegaSena = (props) => {
@@ -26,9 +27,7 @@ const MegaSena = (props) => {
   return (
     <div className="megaSena-container">
       <h2 className="titleMegaSena">Mega-Sena</h2>
-      <button className="btn-megaSena" onClick={geraNumeros}>
-        Gerar números
-      </button>
+      <Button className="btn-megaSena" onClick={geraNumeros} />
     </div>
   );
 };

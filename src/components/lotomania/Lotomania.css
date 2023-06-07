@@ -6,7 +6,7 @@
 
 .titleLotomania {
   color: orange;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
 }
@@ -14,7 +14,7 @@
 .btn-lotomania {
   background-color: orange;
   padding: 12px 10px;
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: white;
   font-family: inherit;
   border: none;
@@ -47,14 +47,13 @@
 
 /* --------- */
 /* Responsividade */
-
-@media (max-width: 384px) {
+@media (min-width: 512px) {
   .titleLotomania {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .btn-lotomania {
-    padding: 10px 8px;
-    font-size: 1rem;
+    padding: 12px 10px;
+    font-size: 1.4rem;
   }
 }

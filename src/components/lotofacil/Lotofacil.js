@@ -1,3 +1,4 @@
+import Button from '../UI/Button';
 import './Lotofacil.css';
 
 const Lotofacil = (props) => {
@@ -26,9 +27,7 @@ const Lotofacil = (props) => {
   return (
     <div className="lotofacil-container">
       <h2 className="titleLotofacil">Lotofacil</h2>
-      <button className="btn-lotofacil" onClick={geraNumeros}>
-        Gerar números
-      </button>
+      <Button className="btn-lotofacil" onClick={geraNumeros} />
     </div>
   );
 };

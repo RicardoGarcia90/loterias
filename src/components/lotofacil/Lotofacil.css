@@ -6,7 +6,7 @@
 
 .titleLotofacil {
   color: purple;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
 }
@@ -14,7 +14,7 @@
 .btn-lotofacil {
   background-color: purple;
   padding: 12px 10px;
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: white;
   font-family: inherit;
   border: none;
@@ -47,14 +47,13 @@
 
 /* --------- */
 /* Responsividade */
-
-@media (max-width: 384px) {
+@media (min-width: 512px) {
   .titleLotofacil {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .btn-lotofacil {
-    padding: 10px 8px;
-    font-size: 1rem;
+    padding: 12px 10px;
+    font-size: 1.4rem;
   }
 }
